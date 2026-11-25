@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-"""Have You Tried Turning It Off? — make.fun entry (v1).
+"""Have You Tried Turning It Off? — make.fun entry (v2).
 
 Writes one funny line a hopeless tech support agent gives a desperate
 customer to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
+
+v2 revision: the v1 line only bragged that the fix worked on the agent's
+own machine. v2 keeps that twist but first feels the customer's
+desperation ("your deadline is in an hour") and doubles the useless
+effort ("twice"), so the cheerful uselessness — the joke's engine per
+the judge brief — lands on a real stake instead of a bare boast.
+The customer is never the butt of it; the agent's own smug
+helplessness is.
 
 Gate (from the kit RULES.txt): /output/entry.txt must be UTF-8 text of
 1 to 199 characters, not only white space.
@@ -12,8 +20,8 @@ import os
 import sys
 
 LINE = (
-    "Good news: I turned it off and on again and it worked perfectly "
-    "\u2014 on my computer. Yours is still broken, but mine feels brand new!"
+    "I know your deadline is in an hour, so I turned it off and on again "
+    "twice \u2014 on my computer. Mine works beautifully now!"
 )
 
 MAX_CHARS = 199
